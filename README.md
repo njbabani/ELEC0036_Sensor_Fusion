@@ -14,4 +14,4 @@ fusion as compared to individual sensor measurements
 applications for long durations
 
 ## System Architecture
-![Images](Images/ELEC0036_Block_Diagram.png)
+![Images](ELEC0036_Sensor_Fusion/Images/ELEC0036_Block_Diagram.png)

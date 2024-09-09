@@ -15,4 +15,4 @@ applications for long durations
 
 ## Results
 ### Kalman Filter
-![Images](Images/ELEC0036_KF_Results)
+![Images](Images/ELEC0036_KF_Results.png)

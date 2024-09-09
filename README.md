@@ -12,5 +12,3 @@ fusion as compared to individual sensor measurements
 - Scalability: To have a system that can be easily deployed whilst remaining economically viable during large-scale deployment
 - Power Consumption: To ensure solution can be deployed in battery-powered
 applications for long durations
-
-## Results

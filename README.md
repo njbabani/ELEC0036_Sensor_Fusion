@@ -18,9 +18,9 @@ The Kalman Filter equations predict and update the system state based on linear 
 
 #### **Prediction Step:**
 
-$$
-\hat{x}_{k|k-1} = F_k \hat{x}_{k-1|k-1} + B_k u_k
-$$
+$
+  \hat{\mathbf{x}}_{k|k-1} = \mathbf{F}_{k}\hat{\mathbf{x}}_{k-1|k-1} + \mathbf{B}_{k}\mathbf{u}_{k}
+$
 
 $$
 P_{k|k-1} = F_k P_{k-1|k-1} F_k^T + Q_k

@@ -13,10 +13,10 @@ fusion as compared to individual sensor measurements
 - Power Consumption: To ensure solution can be deployed in battery-powered
 applications for long durations
 
-### 1. **Kalman Filter (KF) Equations**
+## 1. **Kalman Filter (KF) Equations**
 The Kalman Filter equations predict and update the system state based on linear dynamics and Gaussian noise assumptions.
 
-#### **Prediction Step:**
+### **Prediction Step:**
 
 $
   \hat{\mathbf{x}}_{k|k-1} = \mathbf{F}_{k}\hat{\mathbf{x}}_{k-1|k-1} + \mathbf{B}_{k}\mathbf{u}_{k}
@@ -34,7 +34,7 @@ Where:
 - \( P_{k|k-1} \) is the predicted error covariance,
 - \( Q_k \) is the process noise covariance matrix.
 
-#### **Update Step:**
+### **Update Step:**
 
 $$
 K_k = P_{k|k-1} H_k^T \left( H_k P_{k|k-1} H_k^T + R_k \right)^{-1}
@@ -55,7 +55,7 @@ Where:
 - \( R_k \) is the measurement noise covariance matrix,
 - \( P_{k|k} \) is the updated error covariance.
 
-#### **Initialisation:**
+### **Initialisation:**
 
 $$
 \hat{x}_0 = x_0
@@ -69,10 +69,10 @@ Where \( \nu_0 \) is the initial noise level, and \( I \) is the identity matrix
 
 ---
 
-### 2. **Particle Filter (PF) Equations**
+## 2. **Particle Filter (PF) Equations**
 The Particle Filter is a Monte Carlo method used for non-linear and non-Gaussian systems. It works by generating a set of particles to approximate the posterior distribution.
 
-#### **Particle Filter Procedure**:
+### **Particle Filter Procedure**:
 
 1. **Initialisation**: 
    $$ X_0^{(i)} \sim p(x_0), \, i = 1, 2, \dots, N $$
@@ -92,7 +92,7 @@ The Particle Filter is a Monte Carlo method used for non-linear and non-Gaussian
 6. **Estimate**:
    $$ \hat{x}_k = \sum_{i=1}^{N} \tilde{w}_k^{(i)} X_k^{(i)} $$
 
-#### **Gaussian Likelihood Function** (used in the weight update):
+### **Gaussian Likelihood Function** (used in the weight update):
 
 $$
 \Phi(x) = \frac{1}{\sigma \sqrt{2 \pi}} e^{-\frac{(x - \mu)^2}{2 \sigma^2}}

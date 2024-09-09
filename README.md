@@ -13,7 +13,7 @@ fusion as compared to individual sensor measurements
 - Power Consumption: To ensure solution can be deployed in battery-powered
 applications for long durations
 
-## 1. **Kalman Filter (KF) Equations**
+## Kalman Filter (KF) Equations
 The Kalman Filter equations predict and update the system state based on linear dynamics and Gaussian noise assumptions.
 
 ### **Prediction Step:**

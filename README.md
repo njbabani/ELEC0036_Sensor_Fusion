@@ -16,18 +16,18 @@ applications for long durations.
 
 ## Theory
 
-```math
-
 ### 1. **State-Space Model**
 The state-space model includes step
 
 #### **State Equation**:
 The position update for $ \hat{x}_k $ and $ \hat{y}_k $ is defined as:
 
+```math
 $$
 \hat{x}_k = \hat{x}_{k-1} + \lambda_k \cos(\psi_k) + Q_x
 $$
 
+```
 $$
 \hat{y}_k = \hat{y}_{k-1} + \lambda_k \sin(\psi_k) + Q_y
 $$
@@ -192,8 +192,6 @@ Where:
 - $ X_k^{(i)} $ is the i-th particle,
 - $ w_k^{(i)} $ is the weight for the i-th particle,
 - $ \hat{x}_k $ is the estimated state.
-
-```
 
 ## Results
 ### Kalman Filter

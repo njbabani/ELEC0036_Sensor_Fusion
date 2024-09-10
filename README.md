@@ -25,12 +25,12 @@ The position update for $ \hat{x}_k $ and $ \hat{y}_k $ is defined as:
 ```math
 \hat{x}_k = \hat{x}_{k-1} + \lambda_k \cos(\psi_k) + Q_x
 ```
-$$
+```math
 \hat{y}_k = \hat{y}_{k-1} + \lambda_k \sin(\psi_k) + Q_y
-$$
+```
 
 Where:
-- $ \hat{x}_k $, $ \hat{y}_k $ are the estimated positions at time step $ k $,
+- ```math \hat{x}_k ```, ```math \hat{y}_k ``` are the estimated positions at time step $ k $,
 - $ \lambda_k $ is the step length,
 - $ \psi_k $ is the heading (orientation) at time step $ k $,
 - $ Q_x $, $ Q_y $ are the process noise terms for the position.

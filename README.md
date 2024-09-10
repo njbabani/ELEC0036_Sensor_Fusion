@@ -23,10 +23,7 @@ The state-space model includes step
 The position update for $ \hat{x}_k $ and $ \hat{y}_k $ is defined as:
 
 ```math
-$$
 \hat{x}_k = \hat{x}_{k-1} + \lambda_k \cos(\psi_k) + Q_x
-$$
-
 ```
 $$
 \hat{y}_k = \hat{y}_{k-1} + \lambda_k \sin(\psi_k) + Q_y

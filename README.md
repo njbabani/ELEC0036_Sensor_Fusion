@@ -16,6 +16,8 @@ applications for long durations.
 
 ## Theory
 
+```math
+
 ### 1. **State-Space Model**
 The state-space model includes step
 
@@ -190,6 +192,8 @@ Where:
 - $ X_k^{(i)} $ is the i-th particle,
 - $ w_k^{(i)} $ is the weight for the i-th particle,
 - $ \hat{x}_k $ is the estimated state.
+
+```
 
 ## Results
 ### Kalman Filter
